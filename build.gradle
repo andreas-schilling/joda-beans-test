@@ -4,32 +4,31 @@ apply plugin: 'joda-beans'
 apply plugin: 'application'
 
 repositories {
-	mavenCentral()
-	jcenter()
+    mavenCentral()
+    jcenter()
 }
 
 buildscript {
-	repositories {
-		mavenCentral()
-		jcenter()
-	}
-			
-	dependencies {
-		classpath 'org.joda:joda-beans:1.2'
-    	classpath 'org.kiirun:joda-beans-gradle-plugin:1.0.2'
-	}
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.kiirun:joda-beans-gradle-plugin:1.0.3'
+    }
 }
 	
 dependencies {
-	compile 'org.joda:joda-beans:1.2'
-	compile 'com.google.guava:guava:19.0'
+    compile 'org.joda:joda-beans:1.8'
+    compile 'com.google.guava:guava:19.0'
 }
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 jodabeans {
-	verbose = 3
+    verbose = 3
 }
 
 mainClassName = "org.kiirun.joda.beans.AuthorIndex"
