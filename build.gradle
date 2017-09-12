@@ -1,22 +1,13 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'joda-beans'
-apply plugin: 'application'
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'application'
+    id 'org.kiirun.joda-beans' version '1.0.5'
+}
 
 repositories {
     mavenCentral()
     jcenter()
-}
-
-buildscript {
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'org.kiirun:joda-beans-gradle-plugin:1.0.3'
-    }
 }
 	
 dependencies {

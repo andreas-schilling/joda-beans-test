@@ -103,7 +103,7 @@ public class Isbn implements Bean {
     @Override
     public int hashCode() {
         int hash = getClass().hashCode();
-        hash += hash * 31 + JodaBeanUtils.hashCode(getIsbn());
+        hash = hash * 31 + JodaBeanUtils.hashCode(getIsbn());
         return hash;
     }
 

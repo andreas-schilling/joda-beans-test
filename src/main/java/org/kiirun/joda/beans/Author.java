@@ -167,9 +167,9 @@ public class Author implements Bean {
     @Override
     public int hashCode() {
         int hash = getClass().hashCode();
-        hash += hash * 31 + JodaBeanUtils.hashCode(getFirstName());
-        hash += hash * 31 + JodaBeanUtils.hashCode(getLastName());
-        hash += hash * 31 + JodaBeanUtils.hashCode(getBooks());
+        hash = hash * 31 + JodaBeanUtils.hashCode(getFirstName());
+        hash = hash * 31 + JodaBeanUtils.hashCode(getLastName());
+        hash = hash * 31 + JodaBeanUtils.hashCode(getBooks());
         return hash;
     }
 
