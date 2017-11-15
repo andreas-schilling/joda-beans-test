@@ -38,3 +38,5 @@ Icon
 /bin/
 /.gradle/
 /.settings/
+/out/
+/.idea/

@@ -11,8 +11,9 @@ repositories {
 }
 	
 dependencies {
-    compile 'org.joda:joda-beans:1.8'
+    compile 'org.joda:joda-beans:2.0.2'
     compile 'com.google.guava:guava:19.0'
+    compile 'net.sf.supercsv:super-csv:2.4.0'
 }
 
 sourceCompatibility = 1.8
